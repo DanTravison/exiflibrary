@@ -12,7 +12,7 @@ namespace UnitTests
         {
             get
             {
-                var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
+                var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 path = new System.Uri(path).LocalPath;
                 path = Path.GetDirectoryName(path);
                 path = Path.GetDirectoryName(path);
